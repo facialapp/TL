@@ -32,6 +32,30 @@
     rel="shortcut icon" type="image/x-icon" />
   <link href="https://uploads-ssl.webflow.com/5d3fb9b62bc0d047daf07764/5d400748a2938f8b4bb0fd21_logo%40whitetext.png"
     rel="apple-touch-icon" />
+  <style>
+  .new-link i {
+    font-style: italic;
+    font-weight: 700;
+    color: #db81e9;
+  }
+  .button.cc-contact-us.new-link::after {
+    content: 'new';
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    background-color: #ff0000; /* Red background */
+    color: white; /* White text */
+    font-size: 0.5em; /* Smaller font size */
+    padding: 4px 5px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 5px; /* Space between label and link */
+    vertical-align: middle; /* Align with the nav item */
+    line-height: 1;
+  }
+  .button.cc-contact-us.new-link {
+    display: inline-block;
+  }
+  </style>
 </head>
 
 <body>
@@ -39,13 +63,21 @@
     <div class="navigation-wrap"><a href="/" class="logo-link w-nav-brand w--current"><img
           src="https://uploads-ssl.webflow.com/5d3fb9b62bc0d047daf07764/5d3fe5a5ad57b85180733624_logo%40whitetext%20(1).png"
           width="225" alt="" class="logo-image" /></a>
+      <!--
       <div class="menu">
         <div class="menu-button w-nav-button"><img
             src="https://uploads-ssl.webflow.com/5d3fb9b62bc0d047daf07764/5d3fb9b62bc0d0dd5df07780_menu-icon.png"
             width="22" alt="" class="menu-icon" /></div>
-      </div><a href="mailto:sy@toushihtech.com" class="button cc-contact-us w-inline-block">
-        <div>Contact US</div>
-      </a>
+      </div>
+      --!>
+      <div>
+        <a href="https://audiobooks.toushihtech.com" class="button cc-contact-us w-inline-block new-link keep-show">
+           <div><i>A</i>ud<i>i</i>obooks</div>
+        </a>
+        <a href="mailto:sy@toushihtech.com" class="button cc-contact-us w-inline-block">
+          <div>Contact US</div>
+        </a>
+      </div>
     </div>
   </div>
   <div class="section cc-store-home-wrap">
